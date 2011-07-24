@@ -40,7 +40,7 @@ module Changes
             log_changed.each do |c|
               from = log_changes[c].first
               to = log_changes[c].last
-              log << "#{c} from #{from} to #{to}\n"
+              log << "#{c} from '#{from}' to '#{to}'\n"
             end
             all_changes << log
           end
