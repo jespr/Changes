@@ -15,7 +15,7 @@ module Changes
           # This is where arbitrary code goes that you want to 
           # add to the class that declared "acts_as_widget"
           
-          has_many :resource_changes, :as => :logged_resource, :class_name => 'Changes::ResourceChange'
+          has_many :resource_changes, :as => :logged_resource, :class_name => 'Changes::ResourceChange', :dependent => :destroy
           before_save :identify_changes
 
           include Changes::RecordChanges::Base::InstanceMethods
