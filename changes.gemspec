@@ -10,7 +10,8 @@ Gem::Specification.new do |s|
   s.homepage    = "http://www.github.com/jespr/changes"
   s.summary     = %q{Adds logging of changes to your model}
   s.description = %q{Adds logging of changes to your model, so you can see a list of changes - and what the values were changed from}
-
+  s.add_dependency('json')
+  
   s.rubyforge_project = "changes"
 
   s.files         = `git ls-files`.split("\n")
